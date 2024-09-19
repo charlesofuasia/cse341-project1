@@ -7,7 +7,7 @@ const getContacts = async (req, res) => {
     result.toArray().then((contacts)=> {
         res.setHeader("Content-Type", "application/json");
         res.status(201).json(contacts);
-        console.log(contacts)
+
     })
 
    }catch(error){
