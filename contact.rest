@@ -1,0 +1,14 @@
+# Contacts API end points
+###
+### Get all contacts at (for localhost)
+GET http://localhost:3000/contacts
+
+### Get a specific example of  one contact by id(Stephen)
+GET http://localhost:3000/contacts/66ec6a50e031f0a66b1b9f1f
+
+
+### Get all contacts after deployment at render
+GET  https://cse341-project1-x7ms.onrender.com/contacts
+
+### Get a specific eexample of one contact after deployment on render
+GET https://cse341-project1-x7ms.onrender.com/contacts/66ec6a50e031f0a66b1b9f1f
