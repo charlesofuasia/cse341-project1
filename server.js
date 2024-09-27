@@ -5,15 +5,16 @@ const mongodb = require("./database/dbconnection");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-//To allow cross origin access to api
-const corOptions = {
-  origin: "*",
-  credentials: true,
-  optionSuccessStatus: 200,
-};
-app.use(cors(corOptions));
-
 app.use(bodyParser.json());
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow_origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, DELETE, OPTIONS"
+  );
+  next();
+});
 app.use("/", require("./route"));
 
 mongodb.initDB((error) => {
