@@ -3,16 +3,17 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const mongodb = require("./database/dbconnection");
 const bodyParser = require("body-parser");
-app.use(bodyParser.json());
+const cors = require("cors");
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, PUT, DELETE, OPTIONS"
-  );
-  next();
-});
+//To allow cross origin access to api
+const corOptions = {
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+app.use(cors(corOptions));
+
+app.use(bodyParser.json());
 app.use("/", require("./route"));
 
 mongodb.initDB((error) => {
