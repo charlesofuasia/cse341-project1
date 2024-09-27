@@ -7,7 +7,7 @@ router.use("/api-docs", swaggerUi.serve);
 router.get("/api-docs", swaggerUi.setup(swaggerDocument));
 
 router.get("/", (req, res) => {
-  res.send("Hello World.");
+  res.send("Contacts API documentation. ");
 });
 
 router.use("/contacts", require("./contacts"));
