@@ -34,9 +34,6 @@
     },
     "/contacts/": {
       "get": {
-        "tags": [
-          "Contacts"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -48,9 +45,6 @@
         }
       },
       "post": {
-        "tags": [
-          "Contacts"
-        ],
         "description": "",
         "parameters": [
           {
@@ -90,9 +84,6 @@
     },
     "/contacts/{id}": {
       "get": {
-        "tags": [
-          "Contacts"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -112,9 +103,6 @@
         }
       },
       "put": {
-        "tags": [
-          "Contacts"
-        ],
         "description": "",
         "parameters": [
           {
@@ -158,9 +146,6 @@
         }
       },
       "delete": {
-        "tags": [
-          "Contacts"
-        ],
         "description": "",
         "parameters": [
           {
