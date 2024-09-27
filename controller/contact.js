@@ -80,7 +80,7 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
-  const contact_id = new Object(req.params.id);
+  const contact_id = new ObjectId(req.params.id);
   const response = await mongodb
     .getDatabase()
     .db()
