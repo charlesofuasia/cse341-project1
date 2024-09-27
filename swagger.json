@@ -5,11 +5,9 @@
     "description": "API to access various contacts in the database",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-project1-x7ms.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http", "https"],
   "paths": {
     "/api-docs": {
       "get": {
@@ -34,9 +32,7 @@
     "/contacts/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "201": {
             "description": "Created"
@@ -84,9 +80,7 @@
     "/contacts/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
