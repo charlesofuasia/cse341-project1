@@ -20,4 +20,13 @@ DELETE http://localhost:3000/contacts/:id
 GET  https://cse341-project1-x7ms.onrender.com/contacts
 
 ### Get a specific eexample of one contact after deployment on render
-GET https://cse341-project1-x7ms.onrender.com/contacts/66ec6a50e031f0a66b1b9f1f
+GET https://cse341-project1-x7ms.onrender.com/contacts/:id
+
+### Add a new contact to contacts collection after deployment
+POST  https://cse341-project1-x7ms.onrender.com/contacts
+
+### Update contact's details using contact's _id after deployment
+PUT  https://cse341-project1-x7ms.onrender.com/contacts/:id
+
+### Delete a contact from the contacts collection using contact's _id after deployment
+DELETE  https://cse341-project1-x7ms.onrender.com/contacts/:id
