@@ -1,6 +1,6 @@
 # Contacts API end points
 ###
-## DEVELOPMENT/ LOCALHOST
+### DEVELOPMENT/ LOCALHOST
 
 ###
 
@@ -9,39 +9,33 @@
 ### Request all contacts at (for localhost)
 GET http://localhost:3000/contacts
 
-### 
 
 ### Get a specific example of  one contact by id(Stephen)
 GET http://localhost:3000/contacts/66ec6a50e031f0a66b1b9f1f
-###
 
 ### Create a new contact to contacts database
 POST http://localhost:3000/contacts
-###
 
 ### Update a contact by _id
 PUT http://localhost:3000/contacts/:id
-###
 ### Delete a contact by _id
 DELETE http://localhost:3000/contacts/:id
 
 ###
 ###
 
-## AFTER DEPLOYMENT
+### AFTER DEPLOYMENT
 ### Get all contacts after deployment at render
 GET  https://cse341-project1-x7ms.onrender.com/contacts
-###
 
 ### Get a specific eexample of one contact after deployment on render
 GET https://cse341-project1-x7ms.onrender.com/contacts/:id
-###
+
 
 ### Add a new contact to contacts collection after deployment
 POST  https://cse341-project1-x7ms.onrender.com/contacts
-###
+
 ### Update contact's details using contact's _id after deployment
 PUT  https://cse341-project1-x7ms.onrender.com/contacts/:id
-###
 ### Delete a contact from the contacts collection using contact's _id after deployment
 DELETE  https://cse341-project1-x7ms.onrender.com/contacts/:id
